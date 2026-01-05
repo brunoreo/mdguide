@@ -1,4 +1,7 @@
 Flask
 flask-cors
 flask-mail
+pymongo
+dnspython
+bcrypt
 gunicorn
