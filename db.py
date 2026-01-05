@@ -22,7 +22,7 @@ client = MongoClient(MONGO_URI)
 
 # 2. Explicitly define the database name
 # This ensures it works even if the URI doesn't end with /database_name
-DB_NAME = "mediguide_db"
+DB_NAME = "mediguide"
 db = client[DB_NAME]
 
 # Collections
