@@ -17,7 +17,7 @@ app.config['MAIL_PORT'] = 465#587
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USERNAME'] = 'myappmedi001@gmail.com'  # Your real Gmail
-app.config['MAIL_PASSWORD'] = 'rdefxcmoyipwgiji'  # Your 16-digit App Password
+app.config['MAIL_PASSWORD'] = 'qxtjgtiexnuvifyo'  # Your 16-digit App Password
 app.config['MAIL_DEFAULT_SENDER'] = 'myappmedi001@gmail.com'#'MediGuide Admin'
 
 # Initialize Mail
