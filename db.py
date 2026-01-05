@@ -15,11 +15,15 @@
 import os
 from pymongo import MongoClient
 
-# Use the Environment Variable from Render; Fallback to local for testing
+# 1. Get the URI from Render's Environment Variables
 MONGO_URI = os.environ.get('MONGO_URI', "mongodb://localhost:27017/mediguide")
 
 client = MongoClient(MONGO_URI)
-db = client.get_database() # This automatically picks the DB name from the URI
+
+# 2. Explicitly define the database name
+# This ensures it works even if the URI doesn't end with /database_name
+DB_NAME = "mediguide_db"
+db = client[DB_NAME]
 
 # Collections
 users = db['users']
